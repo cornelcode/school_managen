@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management Dashboard</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>🏫 School Management Dashboard</h1>
+        <nav>
+    <a href="{% url 'students' %}">Students</a>
+    <a href="{% url 'teachers' %}">Teachers</a>
+    <a href="{% url 'classes' %}">Classes</a>
+    <a href="/admin/">Admin Panel</a>
+    <a href="{% url 'logout' %}">Logout</a>
+</nav>
+
+    </header>
+
+    <main>
+    <!--  <section>
+            <h2>Students</h2>
+            <ul>
+                {% for student in students %}
+                <li>{{ student.name }} — {{ student.grade }} (Age: {{ student.age }})</li>
+                {% empty %}
+                <li>No students yet.</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h2>Teachers</h2>
+            <ul>
+                {% for teacher in teachers %}
+                <li>{{ teacher.name }} — {{ teacher.subject }}</li>
+                {% empty %}
+                <li>No teachers yet.</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h2>Classes</h2>
+            <ul>
+                {% for c in classes %}
+                <li>{{ c.name }} — Teacher: {{ c.teacher.name }}</li>
+                {% empty %}
+                <li>No classes yet.</li>
+                {% endfor %}
+            </ul>
+        </section>-->
+        <h1 style="text-align: center; color: aqua;">Welcome to "" school management system</h1>
+        <h2 style="text-align: center; padding: 8px;">Principal: ""</h2>
+         <h2 style="text-align: center; padding: 8px;">Deputy Principal: ""</h2>
+          <h2 style="text-align: center; padding: 8px;">Director of studies: ""</h2>
+    </main>
+
+    <footer>
+        <p>© {{ year }} School Management System</p>
+    </footer>
+</body>
+</html>
